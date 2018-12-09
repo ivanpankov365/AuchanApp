@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/config.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Auchan</title>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        page = document.getElementById("friend-list");
+    }
+
+</script>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!"></a></li>
+            <li><a href="#!"></a></li>
+            <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="lcab.html">Личный кабинет</a></li>
+            <li><a href="friends.html">Друзья</a></li>
+            <li><a href="sale.html">Сделать покупки</a></li>
+            <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+            <li><a href="#">Tools</a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#!"></a></li>
+    <li><a href="#!"></a></li>
+    <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="lcab.html">Личный кабинет</a></li>
+    <li><a href="friends.html">Друзья</a></li>
+    <li><a href="sale.html">Сделать покупки</a></li>
+    <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+    <li><a href="#">Tools</a></li>
+</ul>
+<div class="container">
+    <h5 class="center">Список Друзей</h5>
+    <ul class="collection">
+        <li class="collection-item avatar" id="li1" onclick="changeColor(1)">
+            <img src="css/images/ruslan.jpg" alt="" class="circle">
+            <span class="title">Руслан Канзепаров</span>
+            <p>+7 999 956 24 17</p>
+        </li>
+        <li class="collection-item avatar" id="li2" onclick="changeColor(2)">
+            <img src="css/images/User.png" alt="" class="circle">
+            <span class="title">Антон Печёркин</span>
+            <p>8 920 872 34 18</p>
+        </li>
+    </ul>
+
+    <a href="groupSale.html" class="waves-effect waves-light btn chose-friend-button">Выбрать</a>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

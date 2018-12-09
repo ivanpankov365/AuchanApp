@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/config.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Auchan</title>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        page = document.getElementById("friend-list");
+    }
+
+</script>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!"></a></li>
+            <li><a href="#!"></a></li>
+            <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="lcab.html">Личный кабинет</a></li>
+            <li><a href="friends.html">Друзья</a></li>
+            <li><a href="sale.html">Сделать покупки</a></li>
+            <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+            <li><a href="#">Tools</a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#!"></a></li>
+    <li><a href="#!"></a></li>
+    <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="lcab.html">Личный кабинет</a></li>
+    <li><a href="friends.html">Друзья</a></li>
+    <li><a href="sale.html">Сделать покупки</a></li>
+    <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+    <li><a href="#">Tools</a></li>
+</ul>
+<div class="container">
+
+
+    <h4 class="center">Продукты</h4>
+    <div>
+        <div class="fixed-item buy-btn">
+            <a href="yourSale.html" class="btn waves-effect white-text darken-text-2 z-depth-5" id="addd">Купить</a>
+            <a href="customProd.html" class="btn waves-effect white-text darken-text-2 z-depth-5 blue-grey" id="custom" >Своё</a>
+        </div>
+    <ul class="collection" id="prod-list">
+        <li class="collection-item avatar">
+            <img src="css/images/prod/1.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Красители пищевые «Парфэ» [102 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod1" onclick="addToBucket('Красители пищевые «Парфэ»',1)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/2.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Макароны STELLINE Barilla [81 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod2" onclick="addToBucket('Макароны STELLINE Barilla',2)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/3.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Горошек Heinz. нежный 390г. [67 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod3" onclick="addToBucket('Горошек Heinz. нежный 390г',3)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/4.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Кофе Carte Noire Original [165 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod4" onclick="addToBucket('Кофе Carte Noire Original',4)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/5.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>KitKat DUO [36 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod5" onclick="addToBucket('KitKat DUO',5)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/6.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>«Кока-Кола», 2 л [78 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod6" onclick="addToBucket('«Кока-Кола», 2 л',6)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/7.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>IRN BRU, 2 л [83 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod7" onclick="addToBucket('IRN BRU ',7)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/8.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Соус перечный Tabasco [187 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod8" onclick="addToBucket('Соус перечный Tabasco',8)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/9.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Крупа Salvaminuti, смесь [89 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod9" onclick="addToBucket('Крупа Salvaminuti, смесь',9)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/10.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Перловая крупа «Пассим» [25 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod10" onclick="addToBucket('Перловая крупа «Пассим»',10)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/11.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Сыр Veldhuyzen Maasdam [327 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod11" onclick="addToBucket('Сыр Veldhuyzen Kaas Maasdam',11)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/12.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Сыр Российский [187 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod12" onclick="addToBucket('Сыр Российский',12)">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="css/images/prod/13.jpg" alt="" height="50" width="50" class="prod-img">
+            <div class="prod-text">
+                <h5>Колбаса Московская [293 р]</h5>
+            </div>
+            <a href="#!" class="secondary-content"><i class="material-icons" id="prod13" onclick="addToBucket('Колбаса Московская',13)">add</i></a>
+        </li>
+
+    </ul>
+    </div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

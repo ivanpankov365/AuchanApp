@@ -1,0 +1,235 @@
+.startpage{
+    height: 500px;
+    background-image: url('images/start-page-witout-header.jpg');
+    background-size: cover;
+}
+.add-friend-button{
+    position: relative;
+    left: -20%;
+}
+.nav-wrapper{
+    background: #ffffff;
+}
+.sidenav-trigger{
+    color: #029e5a;
+}
+
+.yes-button{
+    position: relative;
+    left: -25%;
+    width: 20%;
+}
+
+.no-button{
+    position: relative;
+    left: 25%;
+    width: 20%;
+}
+.push{
+    position: absolute;
+    top: 25%;
+}
+
+.prod-img{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.prod-title{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+}
+
+.chose-friend-button{
+    position: relative;
+    left: 34%;
+}
+
+#bacaly1{
+    background: #fffa69;
+}
+#bacaly2{
+    background: #fffa69;
+}
+#bacaly3{
+    background: #fffa69;
+}
+#bacaly4{
+    background: #fffa69;
+}
+#bacaly5{
+    background: #fffa69;
+}
+
+#milk1{
+     background: #6bed9f;
+ }
+#milk2{
+    background: #6bed9f;
+}
+#milk3{
+    background: #6bed9f;
+}
+#milk4{
+    background: #6bed9f;
+}
+#milk5{
+    background: #6bed9f;
+}
+#milk6{
+    background: #6bed9f;
+}
+
+#drink1{
+    background: #a9d1d6
+}
+#drink2{
+    background: #a9d1d6
+}
+
+.carousel{
+    height: 600px;
+}
+
+.buy-btn{
+    position: fixed;
+    color: white;
+    border-radius: 4px;
+    bottom: 7%;
+    left: 40%;
+    z-index: 10;
+}
+
+.btn-sale{
+    position: fixed;
+    color: white;
+    border-radius: 4px;
+    bottom: 7%;
+    width: 30%;
+    left: 35%;
+    z-index: 10;
+}
+.chat-btn{
+    position: fixed;
+    bottom: 3%;
+    right: 10%;
+    z-index: 10;
+}
+#chat{
+    background: #00C853;
+}
+
+.chat-text{
+    position: fixed;
+    bottom: 0%;
+}
+.ownerMasg{
+    position: relative;
+    background: #00b0ff;
+    width: 70%;
+    left: 30%;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+}
+.botMsg{
+    position: relative;
+    background: #00C853;
+    width: 70%;
+    left: 0;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+}
+
+#icon-send{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    height: 80px;
+    width: 80px;
+}
+.chat-body{
+    position: absolute;
+    height: 100px;
+}
+.prod-text{
+    position: center;
+
+    left: 35%;
+    width: 85%;
+}
+h5{
+    font-size: 120%;
+}
+#cross-text{
+    text-decoration:line-through;
+}
+#action{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 20;
+}
+
+#check1{
+    background: #69e091;
+}
+#check2{
+    background: #69e091;
+}
+#check3{
+    background: #69e091;
+}
+#check4{
+    background: #69e091;
+}
+#check5{
+    background: #69e091;
+}
+#check6{
+    background: #69e091;
+}
+#check7{
+    background: #69e091;
+}
+#check8{
+    background: #69e091;
+}
+
+#uncheck1{
+    background: #e08f69;
+}
+#uncheck2{
+    background: #e08f69;
+}
+
+#other1{
+    background: #69c1e0;
+}
+#other2{
+    background: #69c1e0;
+}
+#other3{
+    background: #69c1e0;
+}
+
+#custom{
+    text-align: center;
+    width: 50%;
+    margin: 2px;
+
+}
+#addd{
+    text-align: center;
+    width: 50%;
+    margin: 2px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/config.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Auchan</title>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        page = document.getElementById("friend-list");
+    }
+
+</script>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!"></a></li>
+            <li><a href="#!"></a></li>
+            <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="lcab.html">Личный кабинет</a></li>
+            <li><a href="friends.html">Друзья</a></li>
+            <li><a href="sale.html">Сделать покупки</a></li>
+            <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+            <li><a href="#">Tools</a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#!"></a></li>
+    <li><a href="#!"></a></li>
+    <li><a href="#!" class="brand-logo"><img src="css/images/Auchan-logo.png" height="60" width="180"></a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="lcab.html">Личный кабинет</a></li>
+    <li><a href="friends.html">Друзья</a></li>
+    <li><a href="sale.html">Сделать покупки</a></li>
+    <li><a href="#!" onclick="makePush()">Иду в Ашан!</a></li>
+    <li><a href="#">Tools</a></li>
+</ul>
+<div class="container">
+    <h5 class="center">Все покупки</h5>
+    <div class="chat-btn">
+        <a href="chat.html" class="btn-floating btn-large waves-effect waves-light" id="chat"><i class="material-icons">send</i></a>
+    </div>
+    <div class="carousel carousel-slider center">
+        <div class="carousel-item red black-text" href="#one!">
+            <h2 class="white-text">Список Ивана</h2>
+            <ul class="collection">
+                <li class="collection-item avatar" id="check1">
+                    <img src="css/images/prod/9.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title ">Крупа Salvaminuti, смесь</h2>
+                </li>
+                <li class="collection-item avatar" id="check2">
+                    <img src="css/images/prod/10.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Перловая крупа «Пассим»</h2>
+                </li>
+                <li class="collection-item avatar" id="check3">
+                    <img src="css/images/prod/12.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Сыр Российский</h2>
+                <li class="collection-item avatar" id="uncheck1">
+                    <img src="css/images/prod/13.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Колбаса Московская</h2>
+                </li>
+                </li>
+            </ul>
+        </div>
+        <div class="carousel-item amber black-text" href="#two!">
+            <h2 class="white-text">Список Руслана</h2>
+            <ul class="collection">
+                <li class="collection-item avatar " id="check4">
+                    <img src="css/images/prod/2.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Макароны STELLINE Barilla</h2>
+                </li>
+                <li class="collection-item avatar" id="check5">
+                    <img src="css/images/prod/13.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Колбаса Московская</h2>
+                </li>
+                <li class="collection-item avatar" id="check8">
+                    <img src="css/images/prod/6.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">«Кока-Кола», 2 л</h2>
+                </li>
+                <li class="collection-item avatar" id="other3">
+                    <img src="css/images/prod/7.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">IRN BRU </h2>
+                </li>
+            </ul>
+        </div>
+        <div class="carousel-item green black-text" href="#three!">
+            <h2 class="white-text">Список Антона</h2>
+            <ul class="collection" id="prod-list">
+                <li class="collection-item avatar " id="check6">
+                    <img src="css/images/prod/2.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Макароны STELLINE Barilla</h2>
+                </li>
+                <li class="collection-item avatar" id="check7">
+                    <img src="css/images/prod/9.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Крупа Salvaminuti, смесь</h2>
+                </li>
+                <li class="collection-item avatar" id="uncheck2">
+                    <img src="css/images/prod/13.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Колбаса Московская</h2>
+                </li>
+                <li class="collection-item avatar" id="other2">
+                    <img src="css/images/prod/11.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Сыр Veldhuyzen Maasdam</h2>
+                </li>
+                <li class="collection-item avatar" id="other1">
+                    <img src="css/images/prod/12.png" alt="" height="50" width="50" class="prod-img">
+                    <h2 class="title prod-title">Сыр Российский</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
